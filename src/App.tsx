@@ -5,12 +5,14 @@ import Navbar from "./components/Navbar.tsx";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      {/* <Header />
-      <Main />
-      <Footer /> */}
-    </>
+      
+    <div className='overflow-x-hidden'>
+      <Navbar/>
+      {/* background */}
+      <video src="./src/assets/bacground.mp4" loop autoPlay muted className='object-cover absolute h-screen w-screen -z-10 top-0 left-0'></video>
+
+      {/* content */}
+  </div>
   );
 }
 
