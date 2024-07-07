@@ -1,19 +1,27 @@
-import Navbar from "./components/Navbar.tsx";
-// import Header from "./components/Header";
-// import Main from "./components/Main";
-// import Footer from "./components/Footer";
+import React from "react";
+import Header from "./components/Navbar";
+import HomeSection from "./components/HomeSection";
+import AboutSection from "./components/AboutSection";
+import ServicesSection from "./components/ServicesSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import TeamSection from "./components/TeamSection";
 
 function App() {
-  return (
-      
-    <div className='overflow-x-hidden'>
-      <Navbar/>
-      {/* background */}
-      <video src="./src/assets/bacground.mp4" loop autoPlay muted className='object-cover absolute h-screen w-screen -z-10 top-0 left-0'></video>
+    return (
+        <div>
+            <Navbar />
 
-      {/* content */}
-  </div>
-  );
+            <main>
+                <HomeSection />
+                <AboutSection />
+                <TeamSection />
+            </main>
+
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
